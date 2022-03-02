@@ -31,7 +31,7 @@ int8_t DHT::read() {
     // прижимаем шину к земле на 18 мс
     pinMode(_pin, OUTPUT);
     digitalWrite(_pin, LOW);
-    delay(18);
+    delayMicroseconds(500);
     // отпускаем шину
     pinMode(_pin, INPUT_PULLUP);
     // проверяем реакцию датчика
